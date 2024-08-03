@@ -7,7 +7,7 @@ const Case = () => {
   const inView = useInView(ref);
   return (
     <div className="bg-black  text-white p-5">
-      <div className="flex flex-col w-full justify-center items-center text-[54px] font-mont font-bold leading-[.85] lg:text-[110px] uppercase text-white  md:justify-start md:items-start">
+      <div className="flex flex-col w-full justify-center items-center text-[54px] font-mont font-bold leading-[.85] lg:text-[70px] uppercase text-white  md:justify-start md:items-start">
       <div  className="max-h-[7rem] overflow-hidden"> 
       <motion.div className="max-h-[7rem] overflow-hidden"
           animate={{
@@ -17,7 +17,7 @@ const Case = () => {
           transition={{ duration: 0.8
            }}
         >
-          Our case
+          Our 
         </motion.div></div> 
         <div className="max-h-[7rem] overflow-hidden">  
         <motion.div 
@@ -28,7 +28,7 @@ const Case = () => {
           transition={{ duration: 0.8
            }}
         >
-          studies
+          cutomers
         </motion.div></div>
       </div>
       <div className="flex flex-col w-full justify-center md:justify-start md:items-start items-center text-[#FFB703]  text-[16px] font-[500] mt-5">
@@ -36,13 +36,22 @@ const Case = () => {
           <button>All our expertise</button>
         </motion.div>
       </div>
-      <Marquee>
-        <img className="w-[20rem] pr-4" src="./images/img1.webp" alt="" />
-        <img className="w-[20rem] pr-4" src="./images/img2.webp" alt="" />
-        <img className="w-[20rem] pr-4" src="./images/img3.webp" alt="" />
-        <img className="w-[20rem] pr-4" src="./images/img4.webp" alt="" />
-        <img className="w-[20rem] pr-4" src="./images/img5.webp" alt="" />
+      <Marquee  >
+  
       </Marquee>
+      
+      <marquee>
+        <div className="flex gap-8">
+        <img className="w-[8rem] min-h-[8rem] max-h-[8rem]   pr-4" src="./images/img1.png" alt="" />
+        <img className="w-[8rem] min-h-[8rem] max-h-[8rem]   pr-4" src="./images/img2.png" alt="" />
+        <img className="w-[8rem] min-h-[8rem] max-h-[8rem]   pr-4" src="./images/img3.jpg" alt="" />
+        <img className="w-[8rem] min-h-[8rem] max-h-[8rem]   pr-4" src="./images/img4.png" alt="" />
+        <img className="w-[8rem] min-h-[8rem] max-h-[8rem]   pr-4" src="./images/img5.jpg" alt="" />
+        <img className="w-[8rem] min-h-[8rem] max-h-[8rem]   pr-4" src="./images/img6.png" alt="" />
+        <img className="w-[8rem] min-h-[8rem] max-h-[8rem]   pr-4" src="./images/img7.png" alt="" />
+        </div>
+      
+</marquee>
     </div>
   );
 };

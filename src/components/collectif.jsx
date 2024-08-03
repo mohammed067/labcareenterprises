@@ -8,27 +8,28 @@ const Collectif = () => {
   return (
     <div>
       <motion.div
-        className="bg-black pt-[75px] pb-[75px] px-4 md:sticky md:top-0 md:z-10 md:w-[100vw] h-[100vh] "
+        className="bg-black pt-[75px] pb-[75px] px-4 md:sticky md:top-0 md:z-10 md:w-[100vw]  "
         style={{
           translateY: at,
         }}
       >
         <div>
-          <div className="flex flex-col  gap-10 ">
-            <Collective />
-            <div className="md:flex md:w-full md:gap-[14.25rem] lg:gap-[7.25rem] 2xl:gap-0 ">
-              <div className="flex font-mont text-[22px] md:text-[20px] lg:text-[31px] xl:text-[32px] font-medium w-full md:justify-end xl:h-[30rem] 2xl:h-[20rem] md:items-end md:w-auto justify-center items-center leading-[1]   ">
-                <p className="text-white uppercase md:w-[246px] lg:w-[440px] xl:w-[640px] 2xl:w-[700px] ">
+          <div className="flex flex-col  bg-black w-full gap-10 ">
+            
+            <div className="lg:text-[10rem]  font-mont font-bold text-[#FEF9E7] text-center">ABOUT US</div>
+            <div className="md:flex md:w-full   justify-center gap-[4rem] px-4 lg:px-[4rem] 2xl:gap-0 ">
+              <div className="   ">
+                <p className="text-white uppercase  lg:w-[35rem] 2xl:w-[700px] ">
                   <strong className="text-[#FFB703] uppercase ">
-                    We are one global space to reach youth audiences{" "}
+                  LabCare Enterprises is your trusted partner in providing high-quality laboratory consumables.{" "}
                   </strong>{" "}
-                  and engage with them through their passions
+                  We specialize in delivering reliable and innovative products to healthcare facilities, research institutions, and laboratories.
                 </p>{" "}
               </div>
               <div>
                 <img
-                  className="w-full h-[209px] md:h-[220px] md:w-[14rem] lg:w-[25rem] lg:h-[310px] 2xl:h-[330px] 2xl:w-[48rem]  object-cover  xl:w-full xl:h-[50%] "
-                  src="./images/girl.webp"
+                  className=""
+                  src="./images/aboutus.png"
                   alt=""
                 />
               </div>

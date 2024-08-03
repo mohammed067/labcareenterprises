@@ -45,7 +45,7 @@ const Creative2 = () => {
           }}
           transition={{ duration: 0.2 }}
         >
-          collective
+         what
         </motion.span>
         <motion.span
           variants={{
@@ -59,7 +59,7 @@ const Creative2 = () => {
           }}
           transition={{ duration: 0.3 }}
         >
-          of
+          make
         </motion.span>
         <motion.span
           variants={{
@@ -73,7 +73,7 @@ const Creative2 = () => {
           }}
           transition={{ duration: 0.4 }}
         >
-          the
+          us
         </motion.span>
         <motion.span
           variants={{
@@ -87,9 +87,9 @@ const Creative2 = () => {
           }}
           transition={{ duration: 0.5 }}
         >
-          best
+          unique..?
         </motion.span>
-        <motion.span
+        {/* <motion.span
           variants={{
             hello: { opacity: 0, y: 75 },
             welcome: { opacity: 1, y: 0 },
@@ -102,7 +102,7 @@ const Creative2 = () => {
           transition={{ duration: 0.6 }}
         >
           independent
-        </motion.span>
+        </motion.span> */}
         <motion.span
           variants={{
             hello: { opacity: 0, y: 75 },
@@ -141,31 +141,34 @@ const Creative2 = () => {
               src="./images/REC.png"
               alt=""
             />{" "}
+            
           </motion.div>
+
+        
           <div className=" relative ">
             <div className="flex text-center gap-3 justify-start pt-10 overflow-x-hidden sticky top-0 w-[100vw] left-0 pl-5">
               <Featurescard
                 no={"001"}
-                title={"Creative excellence"}
+                title={"UNMATCHED QUALITY"}
                 content={
-                  "We are a one stop source of creative excellence. Perfect stories and meaningful brand content, crafted by the greatest global creators, shared with your ideal audience."
+                  "As a leading dealer of hospital lab supplies, we offer a comprehensive range of high-quality products designed to meet the stringent demands of healthcare professionals. Our supplies ensure accurate results and dependable performance in every lab."
                 }
               />
               <motion.div style={{ translateX: slide }}>
                 <Featurescard
                   no={"002"}
-                  title={"Millennial Luxury-Lovers"}
+                  title={"RELIABLE HOSPITAL SUPPLIES"}
                   content={
-                    "We excel in reaching and engaging millennial luxury lovers through our network of influential publishers. They're the go-to source for curated content that deeply connects with their passions and values. "
+                    "We specialize in providing hospitals with premium lab supplies, ensuring high-quality performance and enhanced patient care. "
                   }
                 />{" "}
               </motion.div>
               <motion.div style={{ translateX: slide2 }}>
                 <Featurescard
                   no={"003"}
-                  title={"Devoted communities"}
+                  title={"DEDICATED CUSTOMER SERVICE"}
                   content={
-                    "Highly engaged communities of passionate people. These communities love our publishers' content for its authenticity. They actively interact, share and support the content that matches with their interests and values."
+                    "Our clients are our priority. We provide exceptional customer service and expert advice to help you find the right products for your specific needs. Our dedication to service excellence fosters long-term, trusted relationships with all our customers"
                   }
                 />
               </motion.div>

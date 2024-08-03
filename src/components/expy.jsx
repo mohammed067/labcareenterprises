@@ -11,9 +11,9 @@ const Expy = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const Images = [
-    "/images/watch.webp",
-    "/images/green.webp",
-    "/images/style.webp",
+    "/images/test1.jpg",
+    "/images/test1.jpg",
+    "/images/del2.jpeg",
   ];
 
   const updateImageIndex = (progress) => {
@@ -59,7 +59,6 @@ const Expy = () => {
   }, []);
 
   const x = useTransform(scrollYProgress, [0, 1], ["0px", "-100px"]);
-  // const xx = useTransform(scrollYProgress, [0, 1], ["200px", "0px"]);
   const opacity1 = useTransform(scrollYProgress, [0, 0.2], [0.8, 0.5]);
   const opacity2 = useTransform(scrollYProgress, [0.3, 0.5], [0.5, 0.8]);
   const opacity3 = useTransform(scrollYProgress, [0.5, 1], [0.5, 0.8]);
@@ -71,20 +70,19 @@ const Expy = () => {
 
   return (
     <div className="hidden md:block bg-black ">
-      <div className="relative bg-black h-[240vh] lg:h-[270vh] top-0">
+      <div className="relative bg-black h-[240vh] lg:h-[270vh] 2xl:h-[100vh] top-0">
         <div>
           <div className="border-b border-[#4E4C47]  "></div>
         </div>
         <div>
           <div className="py-[80px]">
             <div className="text-[12px] text-center font-mont uppercase opacity-50 text-white">
-              Curating the finest media mix to captivate, engage and reach your
-              target audience
+              Delivering Excellence in Laboratory Supplies
             </div>
             <div>
               <div className="text-[#FEF9E7] text-[30px] lg:text-[62px] leading-7 lg:leading-[3.5rem] lg:mt-6 font-nem font-medium text-center uppercase">
                 {" "}
-                we guarantee <br /> your brand
+                Your Trusted Partner <br /> in Lab Consumables
               </div>
               <div>
                 {isTrans === 1 && (
@@ -94,7 +92,7 @@ const Expy = () => {
                     transition={{ duration: 0.2 }}
                     className="text-[#FFB703] text-[30px] lg:text-[62px] leading-7 lg:leading-[3.5rem] font-nem text-center font-medium uppercase"
                   >
-                    Audience Relevance
+                    Unmatched Quality
                   </motion.div>
                 )}
                 {isTrans === 2 && (
@@ -104,7 +102,7 @@ const Expy = () => {
                     transition={{ duration: 0.2 }}
                     className="text-[#FFB703] text-[30px] lg:text-[62px] lg:leading-[3.5rem] leading-7 font-nem text-center font-medium uppercase"
                   >
-                    Safety
+                    Reliable Delivery
                   </motion.div>
                 )}
                 {isTrans === 3 && (
@@ -114,7 +112,7 @@ const Expy = () => {
                     transition={{ duration: 0.2 }}
                     className="text-[#FFB703] text-[30px] lg:text-[62px] lg:leading-[3.5rem] leading-7 font-nem text-center font-medium uppercase"
                   >
-                    Premium Exclusivity
+                    Expert Support
                   </motion.div>
                 )}
               </div>
@@ -128,7 +126,6 @@ const Expy = () => {
                 <motion.img
                   ref={Up}
                   style={{
-                    // translateY: xx,
                     opacity:
                       currentImageIndex === 0
                         ? opacity1
@@ -142,44 +139,43 @@ const Expy = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-col w-[50%] h-[200vh] ">
+            <div className="flex flex-col w-[50%] h-[200vh] 2xl:h-[120vh] ">
               <Newcard
-                heading={"Social display"}
+                heading={"Comprehensive Product Range"}
                 para={
-                  "Brand or crafted assets displayed through the social pages of our most relevant publishers amplified widely by our team with specific targeting and goals."
+                  "Offering a wide variety of laboratory consumables, including blood sample collection tubes, microbiology kits, and biochemistry lab supplies, sourced from top manufacturers."
                 }
                 images={"./images/arrow.svg"}
-                button={"Let's do this"}
-              ></Newcard>
+                button={"Learn More"}
+              />
 
               <div>
                 <div className="flex flex-col text-center w-full items-center py-7 px-6 ">
                   <div className="font-mont font-bold leading-[.85] uppercase text-white text-[54px] min-w-[15rem] w-full break-words ">
-                    Media amplification
+                    Tailored Solutions
                   </div>
                   <div className="opacity-[.7] text-white mt-[1.75rem] mx-auto whitespace-pre-line text-[12px] w-[13rem]  ">
-                    Get a broader audience through our high-end network. We
-                    create brand-safe content to amplify your activations.{" "}
+                    Customized solutions to meet the unique needs of your laboratory, ensuring you have the right products for your operations.
                   </div>
                   <div className="flex text-[16px] font-mont font-medium uppercase text-opacity-[1] leading-[1] pb-[.25rem] mt-[2.5rem] border-b-[1px] gap-[25px] border-solid border-[#F0AD06] text-[#F0AD06]">
                     <div>
                       {" "}
                       <img src="./images/arrow.svg" />
                     </div>
-                    <div className="">Let's do this</div>
+                    <div className="">Explore Now</div>
                   </div>
                 </div>
                 <div className="border-b-[1px] gap-[25px] border-solid border-[white]"></div>
               </div>
 
               <Newcard
-                heading={"Bespoke brand content"}
+                heading={"Reliable Delivery"}
                 para={
-                  "We craft a powerful big idea and its activations, and deliver action brand content, deepening the connection between your brand and our communities. Through the finest mix media to captivate, engage and reach your target audience."
+                  "Our reliable delivery service ensures that you receive your supplies on time, every time. We understand the importance of timely deliveries to keep your laboratory running smoothly and efficiently."
                 }
                 images={"./images/arrow.svg"}
-                button={"Let's do this"}
-              ></Newcard>
+                button={"Contact Us"}
+              />
             </div>
           </div>
         </div>

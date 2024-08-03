@@ -6,6 +6,8 @@ import Share from "../../svgs/share";
 import Heart from "../../svgs/heart";
 import Logo5 from "../../svgs/logo5";
 import { Link } from "react-router-dom";
+import logo from "../../../public/images/labcarelogo.png"
+import logo2 from "../../../public/images/logo2.png"
 
 const Nav = () => {
   const [isScrolled, setScrolled] = useState(false);
@@ -40,15 +42,15 @@ const Nav = () => {
       <div className=" relative flex justify-between  py-3 px-4 items-center">
         {isScroll ? (
           <div className="">
-            <Logo5 />
+            <img className="w-[3rem] h-[3rem]" src={logo2}/>
           </div>
         ) : (
-          <div className="w-1">
-            <Logo />
+          <div className="">
+            <img className="w-[3rem] h-[3rem]" src={logo}/>
           </div>
         )}
 
-        <div className="hidden lg:flex lg:gap-5 lg:uppercase lg:text-white lg:text-[12px] lg:font-mont  ">
+        <div className="hidden md:flex md:gap-5 md:uppercase md:text-white md:text-[12px] md:font-mont  ">
           <div>
             <div
               className={`hover:text-[#F0AD06] ${
@@ -137,13 +139,20 @@ const Nav = () => {
           </div>
         </div>
         <div className="hidden lg:flex lg:gap-5 lg:text-[#F0AD06] lg:text-[12px] lg:font-mont ">
-          <button className="lg:uppercase"> Get your media kit </button>{" "}
+          <button className="lg:uppercase"> Get   quote </button>{" "}
           <div className=" rounded-full font-mont w-[19px] h-[19px] bg-[#F0AD06] text-black text-center ">
             ↓
           </div>
         </div>
-        <div className="text-white font-bold font-mont text-[16.5px] lg:hidden ">
+        {/* <div className="text-white font-bold font-mont text-[16.5px] lg:hidden ">
           <button>MENU</button>
+        </div> */}
+
+        <div className="md:hidden">
+          <div>HOME</div>
+          <div>ABOUTUS</div>
+          <div>SERVICES</div>
+          <div>CONTACTUS</div>
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@ const Card = ({ svg, images, svg1, media, arrow, border }) => {
             setHover(0);
           }}
         >
-          <div className="  ">{svg}</div>
+          <div className="lg:text-[6rem] text-[1.2rem] md:text-[4rem] text-[#FEF9E7]  font-mont font-bold ">{svg}</div>
           <motion.div
             className="w-[10rem]  h-[6rem] hidden lg:flex "
             animate={{
@@ -28,7 +28,7 @@ const Card = ({ svg, images, svg1, media, arrow, border }) => {
               src={images}
             />
           </motion.div>
-          <div className="flex h-full items-center ">{svg1}</div>
+          <div className="lg:text-[6rem] text-[1.2rem] md:text-[4rem] text-[#FEF9E7] font-mont font-bold  ">{svg1}</div>
         </div>
 
         <div className="flex  items-center w-full justify-center gap-2 lg:hidden">

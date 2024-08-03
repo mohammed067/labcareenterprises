@@ -14,7 +14,7 @@ const Email = () => {
   const hight = useTransform(scrollYProgress, [0.6, 1], [false, true]);
   const hight2 = useTransform(scrollYProgress, [0.7, 1], [false, true]);
 
-  const getScrollYValue = () => {};
+  const getScrollYValue = () => { };
 
   useEffect(() => {
     window.addEventListener("scroll", getScrollYValue);
@@ -93,22 +93,45 @@ const Email = () => {
 
       <div className=" sticky top-10 py-10 z-[10000]   ">
         <div className="h-full w-full relative">
-          <Logo3
+          {/* <Logo3
             color={hight ? "#FEF9E7" : "#010101"}
             color2={!hight2 ? "#FEF9E7" : "#010101"}
-          />
+          /> */}
+          <div className="leading-[3rem] md:leading-[5.5rem] flex flex-col ">
+            <div className="lg:text-[8rem] text-[4rem] md:text-[8rem] text-black text-center font-bold font-mont">
+              labcare
+            </div>
+            <div className="lg:text-[8rem] text-[4rem] md:text-[8rem] text-center text-black lg:text-[#FEF9E7] font-bold font-mont">
+              enterprises
+            </div>
+          </div>
+
+
         </div>
       </div>
 
-      <div className="max-h-[130vh] object-cover ">
-        <video
-          className=""
-          autoPlay
-          loop
-          muted
-          src="./videos/GENTLEMAN JACK.mp4"
-        ></video>
+      <div className="relative">
+
+        <div className="max-h-[130vh] hidden lg:flex object-cover ">
+          <video
+            className=""
+            autoPlay
+            loop
+            muted
+            src="./videos/deliveryvideo1.mp4"
+          ></video>
+        </div>
+
+        <div className="absolute text-[1rem] text-white font-bold bottom-0 left-[40%] flex justify-center text-center">
+          <a href="https://abdulrahamanportfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-center">
+            Developed by <span className="text-[#FEF9E7]">@Abdul Rahaman</span> 
+          </a>
+        </div>
+
       </div>
+
+
+
     </div>
   );
 };

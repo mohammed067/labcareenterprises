@@ -16,7 +16,7 @@ const Creative = () => {
   return (
     <div
       id="main"
-      className="flex flex-col justify-center items-center bg-black "
+      className="flex flex-col z-[1000] justify-center items-center bg-black "
     >
       <motion.div
        

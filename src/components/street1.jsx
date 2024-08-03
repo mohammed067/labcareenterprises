@@ -54,49 +54,21 @@ const Street1 = () => {
       </div>
     <div className="flex flex-col  items-center justify-center w-full uppercase bg-black  text-center gap-5 pt-[5rem] ">
         <div className=" text-white items-center justify-center text-[30px] md:text-[20px] lg:text-[55px] font-mont leading-[.85] max-w-[725px] w-full flex whitespace-pre-line mx-auto  font-medium   ">
-          <h2 className="w-[280px] md:w-[425px] lg:w-[543px] ">
-            We convey the essence of your brands through the most exciting
-            publishers.
+          <h2 className="leading-[2.5rem] text-[1.8rem] pt-[4rem]">
+          We are committed to offering top-notch lab supplies that meet the highest standards of quality and safety, ensuring that your operations run smoothly and efficiently.
           </h2>{" "}
         </div>
         <div className="uppercase text-white  text-[16px] md:text-[10px] font-mont leading-[1] lg:text-[15px] max-w-[500px]  whitespace-pre-line  font-medium py-14 ">
-          <p className="w-[300px] md:w-[269px] lg:w-[390px] ">
-            From rising stars to the most iconic names global reach delivered
-            with exceptional local expertise.
+          <p className="w-[300px] md:w-[269px] lg:w-[390px] text-[1.5rem] ">
+          Why Choose Us?.
           </p>
         </div>
       </div>
     <div >
-    <Card svg={<Street/> }
-    images={"./images/first.webp"}
-    svg1={<Culture/>}
-    media={" Get your media kit "}
-    arrow={"↓"}
-    border={""}
-    >
-    
-    </Card>
-    <Card svg={<Tra/> }
-    images={"./images/second.webp"}
-    svg1={<Vel/>}
-    media={" Get your media kit "}
-    arrow={"↓"}
-    border={""}
-    >
-    
-    </Card>
-    <Card svg={<Fine/> }
-    images={"./images/third.webp"}
-    svg1={<Art/>}
-    media={" Get your media kit "}
-    arrow={"↓"}
-    border={""}
-    >
-    
-    </Card>
-    <Card svg={<Lux/> }
-    images={"./images/four.webp"}
-    svg1={<Ury/>}
+  
+    <Card svg="EXPER"
+    images={"./images/expertise.jpg"}
+    svg1="TISE"
     media={" Get your media kit "}
     arrow={"↓"}
     border={""}
@@ -104,9 +76,37 @@ const Street1 = () => {
     
     </Card>
 
-    <Card svg={<Favourite/> }
-    images={"./images/five.webp"}
-    svg1={<Sports/>}
+    <Card svg="QUA"
+    images={"./images/quality.jpg"}
+    svg1="LITY"
+    media={" Get your media kit "}
+    arrow={"↓"}
+    border={""}
+    >
+    
+    </Card>
+    <Card svg="CUSTOMER"
+    images={"./images/focus.jpg"}
+    svg1="FOCUS"
+    media={" Get your media kit "}
+    arrow={"↓"}
+    border={""}
+    >
+    
+    </Card>
+    <Card svg="RELIABLE"
+    images={"./images/reliable.png"}
+    svg1="DELIVERY"
+    media={" Get your media kit "}
+    arrow={"↓"}
+    border={""}
+    >
+    
+    </Card>
+
+    <Card svg="INNOVATIVE"
+    images={"./images/innovative.jpg"}
+    svg1="SOLUTIONS"
     media={" Get your media kit "}
     arrow={"↓"}
     border={""}
@@ -115,7 +115,7 @@ const Street1 = () => {
     </Card>
     </div>
     <Scrolling/>
-    <Email/>
+    {/* <Email/> */}
     </div>
   )
 }

@@ -6,11 +6,17 @@ import Creative2 from "../sections/home/creative2";
 import Case from "../sections/home/case";
 import Scrolling from "../sections/home/scrolling";
 import Email from "../sections/home/email";
+import Empty from './empty';
+import Footer from './footer';
+import Counters from './Counters';
 
 const Home1 = () => {
   return (
+    <div className='relative '>
+
+{/* <div className="h-[110vh] w-full bg-black absolute top-0 left-0 z-[1000] opacity-75"/> */}
    
-    <div>
+    <div className=''>
       <Hero />
       <div className="md:hidden">
         <Creative />
@@ -20,7 +26,14 @@ const Home1 = () => {
       </div>
       <Case />
       <Scrolling />
-      <Email />
+      {/* <Counters/> */}
+      {/* <Email /> */}
+    
+    </div>
+    <div>
+    {/* <Empty/>
+    <Footer/> */}
+    </div>
     </div>
   );
 };

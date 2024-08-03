@@ -6,8 +6,11 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily:{
-        mont:'Neue Montreal'
+      fontFamily: {
+        mont: 'Neue Montreal',
+      },
+      screens: {
+        '2xl': '1600px', // Add the custom 2xl breakpoint here
       },
     },
   },
